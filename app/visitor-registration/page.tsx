@@ -361,9 +361,15 @@ export default function VisitorRegistrationPage() {
                           className="w-full h-auto"
                         />
                       </div>
-                      <Button type="button" onClick={capturePhoto} className="w-full max-w-md mx-auto">
+                      {/* <Button type="button" onClick={capturePhoto} className="w-full max-w-md mx-auto">
                         Capture Photo
-                      </Button>
+                      </Button> */}
+                      <div className="flex justify-center">
+                        <Button type="button" onClick={capturePhoto} className="w-full max-w-xs">
+                          Capture Photo
+                        </Button>
+                      </div>
+
                     </div>
                   )}
 
