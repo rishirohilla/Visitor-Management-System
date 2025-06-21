@@ -27,12 +27,6 @@ A comprehensive visitor management system built with Next.js, MongoDB, and TypeS
 - Email notifications with QR codes
 - Streamlined check-in process
 
-### 📊 Analytics & Reporting
-- Real-time visitor statistics
-- Daily, weekly, and monthly reports
-- Visitor traffic analytics
-- Export capabilities
-
 ### 🔒 Security Features
 - Photo verification for all visitors
 - Audit trails for all actions
@@ -129,13 +123,11 @@ A comprehensive visitor management system built with Next.js, MongoDB, and TypeS
 
 1. **Dashboard Access**
    - Full visibility of all visitors across departments
-   - Advanced analytics and reporting
    - User management capabilities
 
 2. **Security Features**
    - Monitor all visitor activities
    - Generate compliance reports
-   - Manage system settings
 
 ## API Endpoints
 

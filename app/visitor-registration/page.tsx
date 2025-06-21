@@ -241,7 +241,7 @@ export default function VisitorRegistrationPage() {
                   <Input
                     id="fullName"
                     name="fullName"
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                     value={formData.fullName}
                     onChange={handleChange}
                     required

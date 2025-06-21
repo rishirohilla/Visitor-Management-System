@@ -35,16 +35,16 @@ const navigation = [
     href: "/dashboard/pre-register",
     icon: UserPlus,
   },
-  {
-    name: "Analytics",
-    href: "/dashboard/analytics",
-    icon: BarChart3,
-  },
-  {
-    name: "Settings",
-    href: "/dashboard/settings",
-    icon: Settings,
-  },
+  // {
+  //   name: "Analytics",
+  //   href: "/dashboard/analytics",
+  //   icon: BarChart3,
+  // },
+  // {
+  //   name: "Settings",
+  //   href: "/dashboard/settings",
+  //   icon: Settings,
+  // },
 ]
 
 const adminNavigation = [
@@ -113,9 +113,9 @@ export function DashboardSidebar() {
             <DropdownMenuItem asChild>
               <Link href="/dashboard/profile">Profile</Link>
             </DropdownMenuItem>
-            <DropdownMenuItem asChild>
+            {/* <DropdownMenuItem asChild>
               <Link href="/dashboard/settings">Settings</Link>
-            </DropdownMenuItem>
+            </DropdownMenuItem> */}
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={() => signOut({ callbackUrl: "/" })} className="text-red-600">
               <LogOut className="mr-2 h-4 w-4" />
