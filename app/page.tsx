@@ -139,7 +139,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md shadow-sm border-b sticky top-0 z-50">
+      {/* <header className="bg-white/80 backdrop-blur-md shadow-sm border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
@@ -164,7 +164,38 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </header> */}
+
+      <header className="bg-white/80 backdrop-blur-md shadow-sm border-b sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            {/* Logo & Title */}
+            <div className="flex items-center space-x-3">
+              <div className="bg-primary rounded-lg p-2">
+                <Shield className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <h1 className="text-xl font-bold text-slate-800">Visitor Management System</h1>
+                <p className="text-xs text-slate-500">Secure • Efficient • Professional</p>
+              </div>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 w-full sm:w-auto">
+              <Button variant="ghost" asChild className="w-full sm:w-auto">
+                <Link href="/login" className="w-full text-left sm:text-center">Employee Login</Link>
+              </Button>
+              <Button asChild className="w-full sm:w-auto bg-primary hover:bg-primary/90">
+                <Link href="/visitor-registration" className="flex items-center justify-center w-full sm:w-auto">
+                  Visitor Check-in
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
       </header>
+
 
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
